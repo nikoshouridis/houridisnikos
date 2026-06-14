@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: houridis-stream
+    runtime: python
+    plan: free
+    startCommand: python app.py
+    envVars:
+      - key: MAX_PLAYS
+        value: "0"
